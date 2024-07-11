@@ -5,9 +5,13 @@
 //  Created by JinwooLee on 7/11/24.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 struct ContentView: View {
+    
+    let store : StoreOf<ContentFeature>
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +24,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(store: Store(initialState: ContentFeature.State(), reducer: {
+        ContentFeature()
+    }))
 }

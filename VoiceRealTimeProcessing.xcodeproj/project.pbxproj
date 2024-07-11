@@ -12,6 +12,7 @@
 		DB904A322C3F94D5003B40BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB904A312C3F94D5003B40BB /* Assets.xcassets */; };
 		DB904A352C3F94D5003B40BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB904A342C3F94D5003B40BB /* Preview Assets.xcassets */; };
 		DB904A3D2C3F9539003B40BB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DB904A3C2C3F9539003B40BB /* ComposableArchitecture */; };
+		DB904A3F2C3F95BE003B40BB /* ContentFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB904A3E2C3F95BE003B40BB /* ContentFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		DB904A2F2C3F94D4003B40BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB904A312C3F94D5003B40BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB904A342C3F94D5003B40BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB904A3E2C3F95BE003B40BB /* ContentFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				DB904A2D2C3F94D4003B40BB /* VoiceRealTimeProcessingApp.swift */,
 				DB904A2F2C3F94D4003B40BB /* ContentView.swift */,
+				DB904A3E2C3F95BE003B40BB /* ContentFeature.swift */,
 				DB904A312C3F94D5003B40BB /* Assets.xcassets */,
 				DB904A332C3F94D5003B40BB /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 			files = (
 				DB904A302C3F94D4003B40BB /* ContentView.swift in Sources */,
 				DB904A2E2C3F94D4003B40BB /* VoiceRealTimeProcessingApp.swift in Sources */,
+				DB904A3F2C3F95BE003B40BB /* ContentFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
