@@ -11,6 +11,7 @@
 		DB904A302C3F94D4003B40BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB904A2F2C3F94D4003B40BB /* ContentView.swift */; };
 		DB904A322C3F94D5003B40BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB904A312C3F94D5003B40BB /* Assets.xcassets */; };
 		DB904A352C3F94D5003B40BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB904A342C3F94D5003B40BB /* Preview Assets.xcassets */; };
+		DB904A3D2C3F9539003B40BB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DB904A3C2C3F9539003B40BB /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB904A3D2C3F9539003B40BB /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = VoiceRealTimeProcessing;
+			packageProductDependencies = (
+				DB904A3C2C3F9539003B40BB /* ComposableArchitecture */,
+			);
 			productName = VoiceRealTimeProcessing;
 			productReference = DB904A2A2C3F94D4003B40BB /* VoiceRealTimeProcessing.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = DB904A212C3F94D4003B40BB;
+			packageReferences = (
+				DB904A3B2C3F9539003B40BB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = DB904A2B2C3F94D4003B40BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,9 +295,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinoo.VoiceRealTimeProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,9 +328,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinoo.VoiceRealTimeProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB904A3B2C3F9539003B40BB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.11.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB904A3C2C3F9539003B40BB /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB904A3B2C3F9539003B40BB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB904A222C3F94D4003B40BB /* Project object */;
 }
