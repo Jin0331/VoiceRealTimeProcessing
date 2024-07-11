@@ -13,11 +13,22 @@ struct ContentView: View {
     let store : StoreOf<ContentFeature>
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing : 25) {
+            
+            Text("실시간 음성 녹음 및 출력")
+                .font(.title)
+                .bold()
+            
+            Button {
+                store.send(.voiceRecordButtonTapped)
+            } label: {
+                Image(systemName: "mic.and.signal.meter")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .tint(.black)
+            }
+
+            
         }
         .padding()
     }
